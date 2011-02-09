@@ -11,6 +11,7 @@ Description: Adds a "All Pages" link to the wp_link_pages output that will show 
 Author: Michael Pretty (prettyboymp)
 Version: 0.1.0
 Author URI: http://voceconnect.com
+License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
 class View_All_Pages {
