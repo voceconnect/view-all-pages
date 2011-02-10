@@ -9,7 +9,7 @@ Plugin Name: View All Pages
 Plugin URI: http://vocecommunications.com/services/web-development/wordpress/plugins/view-all-pages/
 Description: Adds a "All Pages" link to the wp_link_pages output that will show all pages for a post on singe page.
 Author: Michael Pretty (prettyboymp)
-Version: 0.1.0
+Version: 0.1.1
 Author URI: http://voceconnect.com
 License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
@@ -35,7 +35,6 @@ class View_All_Pages {
 
 	public function on_action_the_post($post) {
 		global $id, $authordata, $day, $currentmonth, $page, $pages, $multipage, $more, $numpages;
-		var_dump(get_query_var('page'));
 		if(true === get_query_var('all-pages') && $multipage) {
 			$page = 0;
 			$pages[-1] = $post->post_content; //we're setting it to -1 since WP uses $page - 1 to pull from the pages array

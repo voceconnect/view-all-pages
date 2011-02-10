@@ -20,5 +20,7 @@ Adds a "All Pages" link to the wp_link_pages output that will show all pages for
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+= 0.1.1 =
+* removed testing code
 = 0.1.0 =
 * Initial Release
